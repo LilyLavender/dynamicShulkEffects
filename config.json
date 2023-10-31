@@ -1,0 +1,31 @@
+{
+    "new-dir-files": {
+		"fighter/shulk/cmn/effect": [
+            "effect/fighter/shulk/trail/tex_shulk_sword1_jump.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_jump.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_jump.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_jump.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_jump.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword1_speed.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_speed.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_speed.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_speed.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_speed.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword1_shield.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_shield.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_shield.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_shield.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_shield.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword1_buster.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_buster.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_buster.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_buster.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_buster.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword1_smash.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_smash.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_smash.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_smash.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_smash.nutexb"
+        ]
+    }
+}
