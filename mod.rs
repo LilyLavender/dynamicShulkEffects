@@ -25,8 +25,7 @@ unsafe fn after_image4_on_arg29_replace(lua_state: u64) {
 			if i == 0 {
 				let mut newSwordHash: u64 = hitbox_params[0].get_int();
 				let monado_type = WorkModule::get_int(boma, *FIGHTER_SHULK_INSTANCE_WORK_ID_INT_SPECIAL_N_TYPE);
-				let shulk_texs = ["tex_shulk_sword1", "tex_shulk_sword3", "tex_shulk_sword5", "tex_shulk_swordpink1", "tex_shulk_swordred1"];
-				for current_tex in shulk_texs {
+				for current_tex in ["tex_shulk_sword1", "tex_shulk_sword3", "tex_shulk_sword5", "tex_shulk_swordpink1", "tex_shulk_swordred1"] {
 					if hitbox_params[0].get_int() == L2CValue::new_int(hash40(current_tex)).get_int() { 
 						for (i, suffix) in (0i32..).zip(["jump", "speed", "shield", "buster", "smash"]) {
 							if monado_type == i {
