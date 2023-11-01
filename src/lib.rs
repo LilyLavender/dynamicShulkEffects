@@ -1,6 +1,6 @@
 #![feature(concat_idents)]
 #![feature(proc_macro_hygiene)]
-//#![feature(asm)]
+#[allow(non_snake_case)]
 
 mod shulk;
 
