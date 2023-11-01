@@ -22,11 +22,11 @@ unsafe fn after_image4_on_arg29_replace(lua_state: u64) {
 		l2c_agent.clear_lua_stack();
 		let mut newSwordHash: u64 = hitbox_params[0].get_int();
 		let monado_type = WorkModule::get_int(boma, *FIGHTER_SHULK_INSTANCE_WORK_ID_INT_SPECIAL_N_TYPE);
-		for current_tex in ["tex_shulk_sword1", "tex_shulk_sword3", "tex_shulk_sword5", "tex_shulk_swordpink1", "tex_shulk_swordred1"] {
-			if hitbox_params[0].get_int() == L2CValue::new_int(hash40(current_tex)).get_int() { 
-				for (i, suffix) in (0i32..).zip(["jump", "speed", "shield", "buster", "smash"]) {
+		for current_tex in ["1", "3", "5", "pink1", "red1"] {
+			if hitbox_params[0].get_int() == L2CValue::new_int(hash40(format!("tex_shulk_sword{}", current_tex).as_str())).get_int() { 
+				for (i, art) in (0i32..).zip(["jump", "speed", "shield", "buster", "smash"]) {
 					if monado_type == i {
-						newSwordHash = hash40(format!("{}_{}", current_tex, suffix).as_str());
+						newSwordHash = hash40(format!("tex_shulk_sword{}_{}", current_tex, art).as_str());
 					}
 				}
 			}
