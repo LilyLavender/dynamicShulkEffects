@@ -46,14 +46,28 @@ unsafe fn effect_follow_replace(lua_state: u64) {
 	if fighter_kind == FIGHTER_KIND_SHULK && WorkModule::is_flag(boma, *FIGHTER_SHULK_INSTANCE_WORK_ID_FLAG_SPECIAL_N_ACTIVE) {
 		let mut l2c_agent = L2CAgent::new(lua_state);
 		let mut hitbox_params: Vec<L2CValue> = (0..10).map(|i| l2c_agent.pop_lua_stack(i + 1)).collect();
-		if [L2CValue::new_int(0x128b451786).get_int(), L2CValue::new_int(0x169135fb8f).get_int(), L2CValue::new_int(0x116d1f3036).get_int(), 
-		L2CValue::new_int(0x12d50234a4).get_int(), L2CValue::new_int(0x161769cdae).get_int(), L2CValue::new_int(0x18617c3ae7).get_int(),
-		L2CValue::new_int(0x166873ad8c).get_int(), L2CValue::new_int(0x1ca4651767).get_int(), L2CValue::new_int(0x12a2050432).get_int(), 
-		L2CValue::new_int(0x145e303089).get_int(), L2CValue::new_int(0x142937001f).get_int(), L2CValue::new_int(0x14b75395bc).get_int(),
-		L2CValue::new_int(0x165513843c).get_int(), L2CValue::new_int(0x17bf3f61fc).get_int(), L2CValue::new_int(0x1bcb32a662).get_int(), 
-		L2CValue::new_int(0x16af8ee802).get_int(), L2CValue::new_int(0x1aa3066864).get_int(), L2CValue::new_int(0x0ef4e7d064).get_int(),
-		L2CValue::new_int(0x15fb15c7a1).get_int(), L2CValue::new_int(0x0d6cc4e364).get_int(), L2CValue::new_int(0x15ab1aeaea).get_int(), 
-		L2CValue::new_int(0x1392da6fd8).get_int()].contains(&hitbox_params[0].get_int()) {
+		if [hash40("shulk_airslash"),
+            hash40("shulk_backslash_trace"),
+            hash40("shulk_counter_success"),
+            hash40("shulk_counter"),
+            hash40("shulk_monad_circle_red"),
+            hash40("shulk_monad_circle"),
+            hash40("shulk_monad_sword"),
+            hash40("shulk_monad_sword2_arc_2"),
+            hash40("shulk_monad_sword2_arc"),
+            hash40("shulk_monad_sword2_end"),
+            hash40("shulk_monad_sword2_lightning"),
+            hash40("shulk_monad_sword2"),
+            hash40("shulk_monad_sword3_2"),
+            hash40("shulk_monad_sword3_3"),
+            hash40("shulk_monad_sword3_4"),
+            hash40("shulk_monad_sword3_end"),
+            hash40("shulk_monad_sword3_pink_end"),
+            hash40("shulk_monad_sword3_pink"),
+            hash40("shulk_monad_sword3_red_end"),
+            hash40("shulk_monad_sword3_red"),
+            hash40("shulk_monad_sword3"),
+            hash40("shulk_vision_attack")].contains(&hitbox_params[0].get_int()) {
 			let monado_type = WorkModule::get_int(boma, *FIGHTER_SHULK_INSTANCE_WORK_ID_INT_SPECIAL_N_TYPE);
 			let (mut r, mut g, mut b) = (1.0, 1.0, 1.0);
 			if monado_type == 0 {
