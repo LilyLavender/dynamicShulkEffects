@@ -25,7 +25,12 @@
 			"effect/fighter/shulk/trail/tex_shulk_sword3_smash.nutexb",
 			"effect/fighter/shulk/trail/tex_shulk_sword5_smash.nutexb",
 			"effect/fighter/shulk/trail/tex_shulk_swordpink1_smash.nutexb",
-			"effect/fighter/shulk/trail/tex_shulk_swordred1_smash.nutexb"
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_smash.nutexb",
+            "effect/fighter/shulk/trail/tex_shulk_sword1_white.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword3_white.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_sword5_white.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordpink1_white.nutexb",
+			"effect/fighter/shulk/trail/tex_shulk_swordred1_white.nutexb"
         ]
     }
 }
